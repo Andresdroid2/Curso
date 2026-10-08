@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/blue"
+    tools:context=".LoginP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/toggleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@drawable/toggle_background"
+            android:padding="5dp"
+            android:elevation="4dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnUsuario"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/blue"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"
+                android:text="Usuario"
+                android:textAllCaps="false"
+                android:textColor="#444"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnAdmin"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/blue"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"
+                android:text="Admins"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="95dp"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailEditTextA"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="60dp"
+            android:background="@drawable/login_stile"
+            android:drawableStart="@android:drawable/sym_action_email"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/blue"
+            android:ems="10"
+            android:hint="pablogt1234@gmail.com"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <EditText
+            android:id="@+id/passwordEditTextA"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginHorizontal="60dp"
+            android:background="@drawable/login_stile"
+            android:drawableStart="@android:drawable/ic_secure"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="• • • • • • • • • • • •"
+            android:inputType="textPassword"
+            android:drawableTint="@color/blue"
+            android:paddingStart="10dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditTextA" />
+
+        <Button
+            android:id="@+id/InicioA"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginHorizontal="60dp"
+            android:backgroundTint="@color/white"
+            android:text="Iniciar"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditTextA" />
+
+    </LinearLayout>
+</ScrollView>

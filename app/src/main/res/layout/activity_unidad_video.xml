@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título de la unidad"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:max="100"
+        android:progress="66"
+        android:progressTint="@android:color/white" />
+
+    <WebView
+        android:id="@+id/webViewVideo"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#000" />
+
+    <FrameLayout
+        android:id="@+id/fullscreen_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnVolverIntro"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/blue"
+            android:layout_marginHorizontal="10dp" />
+
+        <Button
+            android:id="@+id/btnIrParcial"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Ir a la evaluación"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+</LinearLayout>

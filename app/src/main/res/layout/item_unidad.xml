@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/login_stile"
+    android:padding="16dp"
+    android:layout_marginVertical="8dp">
+
+    <TextView
+        android:id="@+id/tvTituloUnidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título de la unidad"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/imgUnidad"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="8dp" />
+
+
+    <Button
+        android:id="@+id/btnVerUnidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar unidad"
+        android:textColor="@color/blue"
+        android:backgroundTint="@android:color/white" />
+
+</LinearLayout>
